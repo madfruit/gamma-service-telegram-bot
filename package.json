@@ -1,0 +1,24 @@
+{
+  "name": "service-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot. Handles requests from telegram, sends data from SIMBAD and articles",
+  "main": "dist/index.js",
+  "repository": "git@gitlab.com:fedchenkov-graduate-work/service-telegram-bot.git",
+  "author": "MadFruit",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf /dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@grammyjs/parse-mode": "^1.7.1",
+    "grammy": "^1.14.1",
+    "grammy-scenes": "^7.3.0",
+    "ioredis": "^5.2.5",
+    "nats": "^2.10.3",
+    "package-app": "git+ssh://git@gitlab.com:fedchenkov-graduate-work/package-app.git",
+    "package-types": "git+ssh://git@gitlab.com:fedchenkov-graduate-work/package-types.git",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.9.4"
+  }
+}

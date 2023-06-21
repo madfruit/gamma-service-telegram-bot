@@ -1,0 +1,23 @@
+export enum TextShortcut {
+    Greeting = 'Greeting',
+    IdSearch = 'IdSearch',
+    IdSearchStart = 'IdSearchStart',
+    IdSearchStarted = 'IdSearchStarted',
+    'Coordinates(ICRS,ep=J2000,eq=2000)' = 'Coordinates(ICRS,ep=J2000,eq=2000)',
+    'Coordinates(FK4,ep=B1950,eq=1950)' = 'Coordinates(FK4,ep=B1950,eq=1950)',
+    'Coordinates(Gal,ep=J2000,eq=2000)' = 'Coordinates(Gal,ep=J2000,eq=2000)',
+    'hierarchy counts' = 'hierarchy counts',
+    'Proper motions' = 'Proper motions',
+    'Parallax' = 'Parallax',
+    'Radial Velocity' = 'Radial Velocity',
+    'Redshift' = 'Redshift',
+    'cz' = 'cz',
+    'Flux B' = 'Flux B',
+    'Flux V' = 'Flux V',
+    'Flux G' = 'Flux G',
+    'Flux J' = 'Flux J',
+    'Flux H' = 'Flux H',
+    'Flux K' = 'Flux K',
+    'Spectral type' = 'Spectral type',
+    'Identifiers' = 'Identifiers'
+}

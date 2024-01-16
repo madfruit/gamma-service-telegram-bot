@@ -37,7 +37,7 @@ getObjectByIdScene.wait().on("message:text", async (ctx) => {
     if(articleLinks.length > 0 && articleText) {
         const keyboard = new InlineKeyboard();
         articleLinks.forEach((link, index) => {
-            keyboard.url(`${index}`, link);
+            keyboard.url(`${index+1}`, link);
         });
         keyboard.text(getText(TextShortcut.IdSearch), BotCommand.StartSearchById);
         await ctx.reply(articleText, {reply_markup: keyboard});

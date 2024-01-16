@@ -11,7 +11,8 @@ export function getArticleTitles(articles: ArticleWithUsers[]): string {
     if (articles.length > 0) {
         text = 'На нашому сайті є новини, що стосуються цього об\'єкта. Ось посилання: \n';
         articles.forEach((article, index) => {
-            text += index + ') ' + article.title + '\n';
+            const i = index + 1;
+            text += i + ') ' + article.title + '\n';
         });
     }
     return text;
